@@ -15,6 +15,10 @@ filterOption.addEventListener("click", filterTodo);
 function addTodo(e) {
   //Prevent natural behaviour
   e.preventDefault();
+  console.log(todoInput.value);
+  if (todoInput.value) {
+    
+  
   //Create todo div
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
@@ -40,6 +44,7 @@ function addTodo(e) {
   todoDiv.appendChild(trashButton);
   //attach final Todo
   todoList.appendChild(todoDiv);
+}
 }
 
 function deleteTodo(e) {
