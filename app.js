@@ -15,7 +15,7 @@ filterOption.addEventListener("click", filterTodo);
 function addTodo(e) {
   //Prevent natural behaviour
   e.preventDefault();
-  console.log(todoInput.value);
+  
   if (todoInput.value) {
     
   
